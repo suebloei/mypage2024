@@ -1,72 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <meta charset =“utf-8”>
-    <title>Mr.Noppakhun Suebloei</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      body {
-         background-color:#FCFFE0;
-      }
-      img {
-        border-radius: 50%;
-      }
-      hr {
-        background-color:#BACD92;
-      }
-    </style>
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <table>
-      <thead>
-          <tr>
-              <th>
-                <img src = 'noppakhun.jpg' style="border-radius: 50%; width: 200px; height: 200px;"> </th>     
-                <th><h1>Noppakhun Suebloei</h1>
-                    <h3>ตำแหน่ง ครู วิทยฐานะ ครูชำนาญการพิเศษ</h3>
-                    <h3>กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</h3>
-                    <h3><a href = "http://www.sichompusuksa.ac.th/joomla/">Sichomphusuksa School</a></h3>
-                    <h3><a href = "contact.html">Contact</a></h3></tr>
-  </table>
-<h3  style="color:rgb(131, 8, 8);">"จักยอมตายหมายให้เกียรติดำรง<em> จักปิดทองหลังองค์ </em> พระปฏิมา"</h3>
-<br>
+  <script src="index.js" charset="utf-8"></script>
+    <div>
+         <div class="quiz-container">
+            <h1></h1>
+            <p id="question">1. PIM ย่อมาจากอะไร ?</p>
+            <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+            <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+            <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+            <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+            <p id="result"></p>
+        </div>
+        <div class="quiz-container">
+                <h1></h1>
+                <p id="question">2. PIM เริ่มก่อตั้งเมื่อปีใด ?</p>
+                <button class="button" onclick="checkAnswer2('a')">A) 2565</button>
+                <button class="button" onclick="checkAnswer2('b')">B) 2560</button>
+                <button class="button" onclick="checkAnswer2('c')">C) 2555</button>
+                <button class="button" onclick="checkAnswer2('d')">D) 2550</button>
+                <p id="result2"></p>
+        </div>
+        <p id="result3"></p>
+    </div>
 
-<hr style="border-style: dotted;">
-
-<h3>ประสบการณ์การทำงาน</h3>
-<table>
-  <thead>
-    <tr>
-      <th>
-        Year
-      </th>
-      <th>
-        Work Place
-      </th>
-    </tr>
-  </thead>
-
-  <tr>
-    <td>2019-2024</td>
-    <td>Sichomphusuksa School</td>
-  </tr>
-  <tr>
-    <td>2011-2019</td>
-    <td>Chumphaesuksa School</td>
-  </tr>
-  <tr>
-    <td>2003-2011</td>
-    <td>Nachansuksa School</td>
-  </tr>
-  <tr>
-    <td>2001-2003</td>
-    <td>Huayjingwittaya School</td>
-  </tr>
-  <tr>
-    <td>2000-2001</td>
-    <td>Kokpakung School</td>
-  </tr>
-</table>
+   
+   <script src="script.js"></script>
 </body>
 </html>
